@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracy Card Design</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135depink#f5f7fa 0%,pink#c3cfe2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Profile Card Container */
+        .profile-card {
+            background: pink#ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 100%;
+            max-width: 400px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Image Wrapper for scaling effect */
+        .image-container {
+            width: 100%;
+            height: 450px; /* Adjust height as needed */
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* The Image Element */
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image fills the space without distorting */
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .profile-card:hover .profile-img {
+            transform: scale(1.03); /* Subtle zoom effect on hover */
+        }
+
+        /* Details Section */
+        .profile-details {
+            padding: 25px;
+            text-align: center;
+        }
+
+        .profile-name {
+            font-size: 1.5rem;
+            color: #333333;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .profile-title {
+            font-size: 0.95rem;
+            color: #6c757d;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        /* Optional Action Button */
+        .profile-btn {
+            display: inline-block;
+            padding: 10px 30px;
+            background-color: #ff3366; /* Vibrant color accent to match the shirt detail */
+            color: pink#ffffff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 500;
+            transition: background-color 0.2s ease;
+        }
+
+        .profile-btn:hover {
+            background-color: #e02454;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <div class="image-container">
+            <img class="profile-img" src="Gemini_Generated_Image_1dh3x81dh3x81dh3.png" alt="Profile Portrait">
+        </div>
+        <div class="profile-details">
+            <h2 class="profile-name">Editor</h2>
+            <p class="profile-title">Shield Phix Creative Designer and Editor <background-color blue></background-color> </p>
+            <a href="#" class="profile-btn">View Profile</a>
+        </div>
+    </div>
+  
+</body>
+</html>
